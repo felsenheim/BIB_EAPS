@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+figure {
+    margin: 0;
+    padding: -5;
+    text-align: left;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.allColumns {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 768px) {
+    .allColumns {
+        width: 100%;
+    }
+}
+
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+}
